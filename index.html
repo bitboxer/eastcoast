@@ -8,20 +8,35 @@
   <style type="text/css">
     body {
       margin-top: 1.0em;
-      background-color: #a74ac8;
+      background-color: #396a92;
       font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
+      color: #ffffff;
+      background: -webkit-gradient(
+        radial, center center, 0, center center, 500, from(#396a92), to(#2c537a)
+      );
+      background: -moz-radial-gradient(
+        500px 50%, circle, #396a92 20px, #2c537a 500px
+      );
     }
     #container {
       margin: 0 auto;
       width: 700px;
+      text-shadow: 2px 2px 2px #000; 
     }
-    h1 { font-size: 3.8em; color: #58b537; margin-bottom: 3px; }
+    h1 { 
+      font-size: 3.8em; 
+      color: white; 
+      margin-bottom: 3px; 
+    }
     h1 .small { font-size: 0.4em; }
     h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #58b537; }
-    h3 { text-align: center; color: #58b537; }
-    a { color: #58b537; }
+    h2 { 
+      font-size: 1.5em; 
+      color: white;
+      text-shadow: 2px 2px 2px #000;
+    }
+    h3 { font-size: 1.2em; color: white; text-shadow: 2px 2px 2px #000;}
+    a { color: white; text-shadow: 2 2px 2px rgba(0, 0, 0, 0.68);}
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
     pre { background: #000; color: #fff; padding: 15px;}
@@ -35,39 +50,110 @@
 
   <div id="container">
 
-    <div class="download">
-      <a href="http://github.com/bitboxer/eastcoast/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/bitboxer/eastcoast/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+    <h2>My road trip</h2>
+
+    <iframe style="1px solid black" width="700" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.de/maps/ms?ie=UTF8&amp;hl=de&amp;msa=0&amp;msid=217607061530287367043.00049de9598321facca94&amp;ll=42.488302,-75.498047&amp;spn=9.719866,30.761719&amp;z=5&amp;output=embed"></iframe><br /><small><a href="http://maps.google.de/maps/ms?ie=UTF8&amp;hl=de&amp;msa=0&amp;msid=217607061530287367043.00049de9598321facca94&amp;ll=42.488302,-75.498047&amp;spn=9.719866,30.761719&amp;z=5&amp;source=embed" style="text-align:right">Enlarge</a></small>
+
+    <div class='day'>
+      <h3>Arrive in New York</h3>
+      <ul>
+        <li>Landing in New York, getting used to the Time Zone.</li>
+        <li>Staying at Rachel's place.</li>
+      </ul>
     </div>
 
-    <h1><a href="http://github.com/bitboxer/eastcoast">eastcoast</a>
-      <span class="small">by <a href="http://github.com/bitboxer">bitboxer</a></span></h1>
-
-    <div class="description">
-      My trip in the u.s. of a. in June
+    <div class='day'>
+      <h3>Newark to Washington D.C. (218 Miles, 4:30) </h3>
+      <ul>
+        <li>Driving to Washington</li>
+        <li>Stop in Delaware to <a href="http://www.shopchristianamall.com/directory">buy some apple gear</a>?</li>
+      </ul>
     </div>
 
-    <h2>Authors</h2>
-<p>Bodo Tasche (bodo@wannawork.de)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Bodo Tasche (bodo@wannawork.de)<br/>      </p>
+    <div class='day'>
+      <h3>Explore Washington</h3>
+      <ul>
+        <li>Visit some museums, especially the <a href="http://www.nasm.si.edu/udvarhazy/">Steven F. Udvar-Hazy Center</a></li>
+      </ul>
+    </div>
 
+    <div class='day'>
+      <h3>Washington, drive to Lancaster (115 Miles 2:25)</h3>
+      <ul>
+        <li>Staying at Nelson's place</li>
+      </ul>
+    </div>
 
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/bitboxer/eastcoast/zipball/master">zip</a> or
-      <a href="http://github.com/bitboxer/eastcoast/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/bitboxer/eastcoast</pre>
-    </p>
+    <div class='day'>
+      <h3>Lancaster, drive to Shippensburg (81 Miles, 1:24)</h3>
+      <ul>
+        <li>Staying at Jen's place</li>
+      </ul>
+    </div>
 
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/bitboxer/eastcoast">bitboxer/eastcoast</a>
+    <div class='day'>
+      <h3>Shippensburg, visit Gettysburgh</h3>
+      <ul>
+        <li>Some History Lessons in Gettysburgh</li>
+        <li>Shop in the <a href="http://www.horizongroup.com/our-centers/gettysburg/">outlet store</a></li>
+        <li>Staying at Jen's place</li>
+       </ul>
+    </div>
+
+    <div class='day'>
+      <h3>Shippensburg, drive to Pittsburgh (214 Miles, 4:21)</h3>
+      <ul>
+        <li>Visit the city, check some nightlife</li>
+      </ul>
+    </div>
+
+    <div class='day'>
+      <h3>Pitsburg, drive to Toronto via Niagara Falls (322 Miles, 5:20)</h3>
+      <ul>
+        <li>Drive along the Lake Erie</li>
+        <li>Visit the Niagara Falls</li>
+      </ul>
+    </div>
+
+    <div class='day'>
+      <h3>Toronto</h3>
+      <ul>
+        <li>Visit the city</li>
+        <li>Getting some poutine ?</li>
+      </ul>
+    </div>
+
+    <div class='day'>
+      <h3>Toronto, drive to Montreal (337 Miles, 6:11)</h3>
+      <ul>
+        <li>Drive along the Lake Ontario</li>
+        <li>Check out Montreal at night</li>
+      </ul>
+    </div>
+    <div class='day'>
+      <h3>Montreal</h3>
+      <ul>
+        <li>Visit the city</li>
+      </ul>
+    </div>
+
+    <div class='day'>
+      <h3>Montral, drive to Boston (308 Miles, 5:20)</h3>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+    <div class='day'>
+      <h3>Boston</h3>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+     <div class='day'>
+      <h3>Boston, drive to New York (235 Miles, 4:10)</h3>
+      <ul>
+        <li></li>
+      </ul>
     </div>
 
   </div>
