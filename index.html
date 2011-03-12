@@ -24,14 +24,14 @@
       text-shadow: 2px 2px 2px #000; 
     }
     h1 { 
-      font-size: 3.8em; 
+      font-size: 1.8em; 
       color: white; 
       margin-bottom: 3px; 
     }
     h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
+    h1 a { text-decoration: none; }
     h2 { 
-      font-size: 1.5em; 
+      font-size: 1.3em; 
       color: white;
       text-shadow: 2px 2px 2px #000;
     }
@@ -43,6 +43,19 @@
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
   </style>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+        var weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+        var count = 1;
+        $(".day").each(function(){
+          $(this).prepend("<h2>Day " + count + ", " + weekdays[(count + 2)  % 7] + "</h2>"); 
+          count++;
+        });
+    });
+  </script>
 </head>
 
 <body>
@@ -50,14 +63,14 @@
 
   <div id="container">
 
-    <h2>My road trip</h2>
+    <h1>My road trip</h1>
 
     <iframe style="1px solid black" width="700" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.de/maps/ms?ie=UTF8&amp;hl=de&amp;msa=0&amp;msid=217607061530287367043.00049de9598321facca94&amp;ll=42.488302,-75.498047&amp;spn=9.719866,30.761719&amp;z=5&amp;output=embed"></iframe><br /><small><a href="http://maps.google.de/maps/ms?ie=UTF8&amp;hl=de&amp;msa=0&amp;msid=217607061530287367043.00049de9598321facca94&amp;ll=42.488302,-75.498047&amp;spn=9.719866,30.761719&amp;z=5&amp;source=embed" style="text-align:right">Enlarge</a></small>
 
     <div class='day'>
       <h3>Arrive in New York</h3>
       <ul>
-        <li>Landing in New York, getting used to the Time Zone.</li>
+        <li>Landing in New York, getting used to the time zone.</li>
         <li>Staying at Rachel's place.</li>
       </ul>
     </div>
@@ -73,6 +86,7 @@
     <div class='day'>
       <h3>Explore Washington</h3>
       <ul>
+        <li>Get a bike and drive around the city</li>
         <li>Visit some museums, especially the <a href="http://www.nasm.si.edu/udvarhazy/">Steven F. Udvar-Hazy Center</a></li>
       </ul>
     </div>
@@ -149,10 +163,18 @@
         <li></li>
       </ul>
     </div>
-     <div class='day'>
+    <div class='day'>
       <h3>Boston, drive to New York (235 Miles, 4:10)</h3>
       <ul>
-        <li></li>
+        <li>Return the car</li>
+        <li>Staying at Rachel's place?</li>
+      </ul>
+    </div>
+
+    <div class='day'>
+      <h3>New York</h3>
+      <ul>
+        <li>Peparing for the flight back</li>
       </ul>
     </div>
 
