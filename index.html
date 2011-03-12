@@ -52,7 +52,7 @@
         var weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
         var count = 1;
         $(".day").each(function(){
-          $(this).prepend("<h2>Day " + count + ", " + weekdays[date.getDay()] + ", "+date.getDate()+"."+(date.getMonth()+1)+".</h2>"); 
+          $(this).prepend("<h2>Day " + count + ", " + weekdays[date.getDay()] + ", "+date.getFullYear()+"/"+(date.getMonth()+1 < 10 ? '0' :'')+(date.getMonth()+1) +"/"+(date.getDate() < 10 ? '0' : '')+date.getDate()+"</h2>"); 
           count++;
           date.setDate(date.getDate() + 1);
         });
